@@ -1,178 +1,58 @@
-<!-- www.alsina.xyz | Alchemically bonded by Sebastian Alsina (@youngseebi) -->
-<!-- Ariana M. Davis was here (@yourmobilegeek) -->
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="description" content="">
-    <meta name="author" content="Sebastian Alsina">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portrait Photography in Naples, FL</title>
 
-    <!-- Page Information -->
-    <title>INDEXHTML</title>
-    <meta name="keywords" content="">
-    <meta property="og:title" content="">
-    <meta property="og:description" content="">
-    <meta property="og:url" content="">
-    <meta property="og:site_name" content="">
-    <meta property="og:type" content="">
-    <meta property="og:image" content="">
-    <meta name="twitter:url" content="">
-    <meta name="twitter:title" content="">
-    <meta name="twitter:image" content="">
+    <meta property="og:site_name" content="Naples Photography">
+    <meta property="og:title" content="Portrait Photography in Naples, FL">
+    <meta property="og:description" content="Portrait Photography in Naples, FL">
+    <meta property="og:image" content="http://example.com/example.jpg">
+    <meta property="og:url" content="http://example.com">
+    <meta name="twitter:card" content="summary_large_image">
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="" type="image/x-icon">
-    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x144.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144.png">
-    <meta name="apple-mobile-web-app-title" content="">
-    <meta name="application-name" content="">
-    <meta name="msapplication-TileColor" content="">
-    <meta name="msapplication-TileImage" content="">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/reset.css" type="text/css">
-    <link rel="stylesheet" href="css/master.css" type="text/css">
-    <link rel="stylesheet" href="css/main.css" type="text/css">
-    <link rel="stylesheet" href="css/foxbox.css" type="text/css">
-
-    <!-- JS -->
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="https://use.fontawesome.com/75be605ddf.js"></script>
-    <script src="js/master.js"></script>
-
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/main.js"></script>
 </head>
 
 <body>
 
-    <script>
-        $(document).ready(function() {
-            $(".tile").css({
-                "height": $(".tile").width() + "px"
-            });
-        });
-        $(window).resize(function() {
-            $(".tile").css({
-                "height": $(".tile").width() + "px"
-            });
-        });
-
-        $(document).ready(function() {
-
-            //FOXBOX
-            var openedIndex = "";
-
-            $(".tile").click(function() {
-                openedIndex = $(this).index();
-                $(".foxbox img").attr("src", $(this).children("img").attr("src"));
-                $(".foxbox").fadeIn();
-            });
-
-            $(".foxbox a").click(function(e) {
-                e.preventDefault();
-            });
-
-            $(".foxbox .x").click(function(e) {
-                $(".foxbox").fadeOut();
-            });
-
-            $(".foxbox .next").click(function() {
-                if (($(".tile").size() - 1) <= openedIndex) {
-                    openedIndex = 0;
-                } else {
-                    openedIndex++;
-                }
-                $(".foxbox img").attr("src", $(".tile").eq(openedIndex).children("img").attr("src"));
-
-            });
-
-            $(".foxbox .previous").click(function() {
-                if (($(".tile").size() - 1) <= 0) {
-                    openedIndex = $(".tile").size() - 1;
-                } else {
-                    openedIndex--;
-                }
-                $(".foxbox img").attr("src", $(".tile").eq(openedIndex).children("img").attr("src"));
-            });
-        });
-    </script>
-
-    <div class="foxbox">
-        <div class="nav">
-            <a href="" class="more">Read More &nbsp;<i class="fa fa-external-link"></i></a>
-            <a href="" class="x">Close &nbsp;<i class="fa fa-times"></i></a>
+    <div class="contain">
+        <div class="slab header">
+            <h1>Cesar<br>Alsina</h1>
+            <h2>Naples Based Portrait Photography</h2>
         </div>
-
-        <a href="" class="btns previous"><i class="vertical-center fa fa-angle-left"></i></a>
-        <a href="" class="btns next"><i class="vertical-center fa fa-angle-right"></i></a>
-
-        <img class="vertical-center" src="http://placehold.it/500x500" alt="">
     </div>
 
-    <div class="top-bar">
-        <span>Follow Me:</span>
-        <a href=""><i class="fa fa-instagram"></i></a>
-        <a href=""><i class="fa fa-facebook"></i></a>
-        <a href=""><i class="fa fa-twitter"></i></a>
-        <span>&nbsp;</span>
-        <span>Contact Me:</span>
-        <a href=""><i class="fa fa-phone"></i></a>
-        <a href=""><i class="fa fa-envelope"></i></a>
+    <div class="lightbox">
+        <img src="https://source.unsplash.com/random/mountain" alt="">
+        <img src="https://source.unsplash.com/random/dog" alt="">
+        <img src="https://source.unsplash.com/random/water" alt="">
+        <img src="https://source.unsplash.com/random/animal" alt="">
+        <img src="https://source.unsplash.com/random/wtf" alt="">
     </div>
 
-    <div class="container">
-        <img class="logo" src="img/cesar-alsina-logo.svg" alt="">
-
-        <div class="tiles">
-            <div class="tile">
-                <img src="img/men/simpatico.jpg" alt="">
-            </div>
-            <div class="tile">
-                <img src="img/men/RyanBladenGuitarWhiteCouch.jpg" alt="">
-            </div>
-            <div class="tile">
-                <img src="img/women/BrandyKemp.jpg" alt="">
-            </div>
-            <div class="tile">
-                <img src="img/women/MartiKoehler.jpg" alt="">
-            </div>
-            <div class="tile">
-                <img src="img/women/MichelleNikiHatBeachColor.jpg" alt="">
-            </div>
-            <div class="tile">
-                <img src="http://placehold.it/800x500" alt="">
-            </div>
-            <div class="tile">
-                <img src="http://placehold.it/500x600" alt="">
-            </div>
-            <div class="tile">
-                <img src="http://placehold.it/560x800" alt="">
-            </div>
-            <div class="tile">
-                <img src="http://placehold.it/800x500" alt="">
-            </div>
-            <div class="clear"></div>
+    <div class="contain">
+        <div class="slab">
+            <p class="temp">Sick mood sad virtues like so. And finds by none he hight did condemned be from his counsel. 
+                full of congealed. Chill when mine present yea was, what who and this to oh adversity and such to. Which
+                maddest. forgot condemned pleasure. There there it to with oh seemed.</p>
         </div>
+    </div>
 
-        <div class="footer">
-            <img class="logo" src="img/cesar-alsina-logo.svg" alt="">
-
-            <p class="copyright">&copy; GraphicBiz &nbsp;&verbar;&nbsp; All Right Reserved
-                <script>
-                    document.write(new Date().getFullYear())
-                </script>
-            </p>
-
-            <p class="credit">Website designed and devloped by <a href="">Sebastian</a> and <a href="">Cesar</a>.</p>
+    <div class="slab">
+        <div class="book-now">
+            <div class="slab-title">Book Now</div>
+            <form action="">
+                <input type="text" name="name" placeholder="Your Name">
+                <input type="text" name="name" placeholder="Your Budget">
+                <input type="text" name="name" placeholder="Your Your loca">
+            </form>
         </div>
     </div>
 
