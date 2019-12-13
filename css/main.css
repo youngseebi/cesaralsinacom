@@ -18,6 +18,16 @@ body, html {
     margin: auto;
 }
 
+.top-bar {
+    text-align: center;
+    padding: 12px;
+    border-bottom: 1px solid rgb(245, 245, 245);
+    position: fixed;
+    background-color: white;
+    right: 0; left: 0;
+    z-index: 99;
+}
+
 .slab {
     width: 100%;
     padding: 40px 20px;
