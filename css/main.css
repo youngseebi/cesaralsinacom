@@ -61,6 +61,7 @@ body, html {
         width: calc(50% - 12px);
         margin: 6px;
     }
+
     .collage .image:last-child {
         display: none;
     }
